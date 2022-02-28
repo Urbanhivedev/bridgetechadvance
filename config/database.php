@@ -46,11 +46,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => $DATABASE_URL['host'],
+            'url' => env('CLEARDB_DATABASE_URL'),
+            'host' => /*$DATABASE_URL['host']*/ 'us-cdbr-east-05.cleardb.net/heroku' ,
             'port' => $DATABASE_URL['port'],
-            'database' => ltrim($DATABASE_URL['path'] ,"/"),
-            'username' => $DATABASE_URL['user'],
+            'database' => 'us-cdbr-east-05.cleardb.net/heroku'/*ltrim($DATABASE_URL['path'] ,"/")*/,
+            'username' => /*$DATABASE_URL['user']*/ 'bc1122e4a2514a',
             'password' => $DATABASE_URL['pass'],
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
