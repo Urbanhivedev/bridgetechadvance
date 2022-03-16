@@ -30,6 +30,12 @@
 
 <link rel="stylesheet" href="../free/assets/vendor/animate/animate.css">
 
+<!-- dagogo's compartmentalized css styles -->
+<link rel="stylesheet" href="css/developerlist.css">
+<link rel="stylesheet" href="css/calendarbookings.css">
+<link rel="stylesheet" href="css/bookings.css">
+<!-- dagogo's compartmentalized css styles -->
+
 <link rel="stylesheet" href="../free/assets/css/theme.css">
   </head>
   <body>
@@ -63,7 +69,64 @@
     <!-- plugins:js -->
     @include('user.script')
     <!-- End custom js for this page -->
+    
+     <script>
+     window.onLoad = function(){
+     
+     let chosenDay = " "
+     let chosenTime = " "
+     
+      function setDay(day){
+         chosenDay = day 
+         return;
+      }
+
+      function setTime(time){
+         chosenTime = time 
+         return;
+      }
+
+    let monday = document.querySelector("#monday");
+    let tuesday = document.querySelector("#tuesday");
+    let wednesday = document.querySelector("#wednesday");
+    let thursday = document.querySelector("#thursday");
+    let friday = document.querySelector("#friday");
+
+    let time = document.querySelector(".time");
+    
+    let developerlist = document.querySelector("#developerList");
+     let personal = document.querySelector("#personal");
+   
+     
+
+
+     monday.addEventListener("click", setDay(monday[0].id));
+     tuesday.addEventListener("click", setDay(tuesday[0].id));
+     wednesday.addEventListener("click", setDay(wednesday[0].id));
+     thursday.addEventListener("click", setDay(thursday[0].id));
+     friday.addEventListener("click", setDay(friday[0].id));
+
+     personal.style.display = "none"
+
+
+
+     if(chosenDay !== " " /*&& chosenTime !== " " */){
+      
+      developerlist.style.display = "none"
+      personal.style.display = "block"   
+
+     } 
+    
+    }
+
+     </script>
+
+
+
+
   </body>
+
+ 
 
 <!-- Mirrored from www.bootstrapdash.com/demo/purple-admin-free/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Jan 2022 14:55:28 GMT -->
 </html>

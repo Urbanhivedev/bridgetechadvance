@@ -1,0 +1,21 @@
+.videoOrientation {
+ display:flex;
+ flex-direction:column;
+justify-content: left;
+
+}
+
+
+.buttonCenter {
+    display:flex;
+ flex-wrap:wrap;
+ flex-direction:row;
+ 
+ justify-content: center;
+ align-items:center;
+
+} 
+
+.dark{
+    background-color: black !important;
+}

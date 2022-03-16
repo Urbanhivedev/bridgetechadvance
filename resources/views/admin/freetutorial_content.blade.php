@@ -23,18 +23,18 @@
               <div class="post-category">
                 <a href=""></a>
               </div>
-              <a href="https://www.youtube.com/watch?v=EGQh5SZctaE" class="post-thumb">
+              <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU&t=1355s" class="post-thumb">
                 <img src="../free/assets/img/prog.jpg" alt="">
               </a>
             </div>
             <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">Click here to for this tutorial</a></h5>
+              <h5 class="post-title"><a href="blog-details.html">Click here to watch</a></h5>
               <div class="site-info">
                 <div class="avatar mr-2">
                   <div class="avatar-img">
                   <img src="../free/assets/img/prog.jpg" alt="">
                   </div>
-                  <span>Roger Adams</span>
+                  <span>Dagogo Uranta</span>
                 </div>
               </div>
             </div>
@@ -47,17 +47,17 @@
                 <a href="#"></a>
               </div>
               <a href="blog-details.html" class="post-thumb">
-              <img src="../free/assets/img/prog.jpg" alt="">
+              <img src="../free/assets/img/Python-Syntax-Thumbnail.jpg" alt="python tutorial">
               </a>
             </div>
             <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">Click here to for this</a></h5>
+              <h5 class="post-title"><a href="blog-details.html">Click here to watch </a></h5>
               <div class="site-info">
                 <div class="avatar mr-2">
                   <div class="avatar-img">
                   <img src="../free/assets/img/prog.jpg" alt="">
                   </div>
-                  <span>Roger Adams</span>
+                  <span>Olanrewaju Kabir</span>
                 </div>
               </div>
             </div>
@@ -70,17 +70,17 @@
                 <a href="#"></a>
               </div>
               <a href="blog-details.html" class="post-thumb">
-              <img src="../free/assets/img/prog.jpg" alt="">
+              <img src="../free/assets/img/bootstrap-thumb.jpg" alt="bootstrap tutorial">
               </a>
             </div>
             <div class="body">
-              <h5 class="post-title"><a href="blog-details.html">Click here to for this tutorial</a></h5>
+              <h5 class="post-title"><a href="blog-details.html">Click here to watch </a></h5>
               <div class="site-info">
                 <div class="avatar mr-2">
                   <div class="avatar-img">
                   <img src="../free/assets/img/prog.jpg" alt="">
                   </div>
-                  <span>Diego Simmons</span>
+                  <span>Dagogo Uranta</span>
                 </div>
               </div>
             </div>

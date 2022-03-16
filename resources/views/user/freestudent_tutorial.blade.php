@@ -7,6 +7,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>URBANHIVE</title>
+
+    <!-- dagogo's styles-->
+<link rel="stylesheet" href="css/videolist.css">
+
     <!-- plugins:css -->
     <link rel="stylesheet" href="admin/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="admin/assets/vendors/css/vendor.bundle.base.css">
@@ -16,20 +20,24 @@
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="stylesheet" href="admin/assets/css/style.css">
+    
+   <link rel="stylesheet" href="admin/assets/css/style.css"> 
     <!-- End layout styles -->
     <link rel="shortcut icon" href="admin/assets/images/favicon.ico" />
     
-  <link rel="stylesheet" href="../free/assets/css/maicons.css">
+  <link rel="stylesheet" href="free/assets/css/maicons.css">
 
-<link rel="stylesheet" href="../free/assets/css/bootstrap.css">
+ <link rel="stylesheet" href="free/assets/css/bootstrap.css"> 
 
-<link rel="stylesheet" href="../free/assets/vendor/owl-carousel/css/owl.carousel.css">
+<link rel="stylesheet" href="free/assets/vendor/owl-carousel/css/owl.carousel.css">
 
-<link rel="stylesheet" href="../free/assets/vendor/animate/animate.css">
+<link rel="stylesheet" href="free/assets/vendor/animate/animate.css">
 
-<link rel="stylesheet" href="../free/assets/css/theme.css">
+ <link rel="stylesheet" href="free/assets/css/theme.css"> 
+    <!-- it used to be ../free instead of just free -->
+
   </head>
+
   <body>
     <div class="container-scroller">
                   
