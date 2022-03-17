@@ -15,7 +15,7 @@
 
             <div class="page-section bg-light">
     <div  class="container"> 
-      <h1 style="font-size:3rem" class="text-center wow fadeInUp">Our Video Tutorials</h1>
+      <h1 style="font-size:3rem" class="text-center wow fadeInUp">Our Video Sessions</h1>
       <div class="row mt-5 videoOrientation ">
      
       <br>
