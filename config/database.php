@@ -49,7 +49,7 @@ return [
             'url' => /*env('CLEARDB_DATABASE_URL')*/ env('DATABASE_URL'),
             'host' =>  /*env('DB_HOST' , 'localhost' '127.0.0.1)*/ /*$DATABASE_URL['host'] */ 'us-cdbr-east-05.cleardb.net' /*/heroku */ , 
             'port' =>  env('DB_PORT', '3306')/*$DATABASE_URL['port']*/,
-            'database' => /*env('DB_DATABASE', 'forge')*/  'us-cdbr-east-05.cleardb.net/heroku_659481b517225a1'  /*_659481b517225a1*/ /*ltrim($DATABASE_URL['path'] ,"/")*/,
+            'database' => /*env('DB_DATABASE', 'forge')*/  'us-cdbr-east-05.cleardb.net/heroku'  /*_659481b517225a1*/ /*ltrim($DATABASE_URL['path'] ,"/")*/,
             'username' =>  /*env('DB_USERNAME', 'forge')*/ /* $DATABASE_URL['user']*/ 'bc1122e4a2514a',
             'password' => /*env('DB_PASSWORD', '')*/ /*$DATABASE_URL['pass']*/ '14028210',
             'unix_socket' => env('DB_SOCKET', ''),
