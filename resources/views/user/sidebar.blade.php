@@ -3,14 +3,14 @@
         <nav  class="sidebar sidebar-offcanvas" id="sidebar" style="background:black !important;color:white !important;">
           <ul class="nav">
 
-          <li class="nav-item " style="background:black !important;color:white !important;" > 
-          <div  class=" text-center navbar-brand-wrapper d-flex align-items-center justify-content-center;" style=" background:black !important;width:259px;">
-          <a class="navbar-brand brand-logo" href="index-2.html"><img src="admin/assets/images/urbanhive.png"   style="width:80px;height:65px;padding-top:8px;" alt="logo" /></a>
+          <li class="nav-item d-flex align-items-center justify-content-center;" style="background:black !important;color:white !important;" > 
+          <div  class=" text-center navbar-brand-wrapper " style=" background:black !important;width:259px;"> <!-- d-flex align-items-center justify-content-center;  -->
+          <a class="navbar-brand brand-logo" href="index-2.html"><img src="admin/assets/images/urbanhive.png"   style="width:150px;height:165px;padding-top:8px;" alt="logo" /></a>
           <!-- <a class="navbar-brand brand-logo-mini" href="index-2.html"><img src="admin/assets/images/urbanhive.png"  style="width:60px;height:60px;" alt="logo" /></a> -->
         </div>
           </li> 
 
-            <li class="nav-item nav-profile">
+            <li class="nav-item nav-profile" style="display:none;">
               <a href="#" class="nav-link">
                 <div class="nav-profile-image">
                 <img src="admin/assets/images/donaldglover.jpg"alt="profile-pic">
@@ -24,6 +24,10 @@
                 <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
               </a>
             </li>
+
+            <li class="nav-item" style="background:black !important;color:white !important; height:70px;" >
+            <!-- I DID THIS LIST ITEM , JUST TO PUT SOME SPACE BETWEEN LOGO AND ITEMS -->
+           </li>
 
 
             <li class="nav-item" style="background:black !important;color:white !important;" >
