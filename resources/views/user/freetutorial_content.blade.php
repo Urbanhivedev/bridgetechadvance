@@ -1,10 +1,25 @@
+<style> 
+   .checked {
+    color: orange ;
+  }
+
+  .fa {
+    font-size:32px;
+  }
+
+  .dark{
+    width:150px;
+  }
+ </style>
+
+
 <div class="main-panel">
-          <div class="content-wrapper " >
+          <div class="content-wrapper" style="background: #F4f9f9 !important;" >  <!--THE BACKGROUND COLOR YOU CHOSE IS VERY CLOSE ,BUT NOT EXACT ,TREAT IT LATER -->
             <div class="page-header">
               <div class="page-title">
-                <span class="page-title-icon bg-gradient-primary text-white mr-2">
+               <!-- <span class="page-title-icon bg-gradient-primary text-white mr-2">
                   <i class="mdi mdi-filmstrip"></i>
-                </span>  Free Programming  Materials
+                </span>   Free Programming Materials -->
               </div>
               <nav aria-label="breadcrumb">
                 <ul class="breadcrumb">
@@ -52,16 +67,26 @@
          
          </div>  <!--  col-lg 4 ending -->
        
-         <div  class=" py-6 col-lg-4 wow ">
+         <div  class=" py-6 mx-5 col-lg-4 wow ">
+           <h1 style ="font-size:32px !important"> Intro to Programming</h1>
+           <br/>
           This Video is for absolute beginners with no experience in programming. 
           It aims to give a high level overview into what programmers do, and the capability of software programs.
         </div> 
 
-        <div  class=" py-2 col-lg-2 wow  d-flex justify-content-center align-items-center pl-5">
+        <div  class=" py-2 col-lg-2 wow  d-flex flex-column justify-content-around align-items-center pl-5">
          
         <a href="https://www.youtube.com/watch?v=EGQh5SZctaE" class="post-thumb">
         <button type="button" class="btn btn-info dark">Watch <i class="mdi mdi-arrow-right"></i></button>
+        <a href="https://www.youtube.com/watch?v=rfscVS0vtbw">  <button type="button" class="btn btn-info dark">Book Dev <i class="mdi mdi-calendar"></i></button></a>
         </a>
+        <div  class="  d-flex justify-content-around align-items-center ">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked "></span>
+        <span class="fa fa-star"></span>
+        </div> 
 
         </div> 
 
@@ -104,16 +129,28 @@
           </div>
         </div>
 
-        <div  class=" py-6 col-lg-4 wow ">
+        <div  class=" py-6  mx-5 col-lg-4 wow ">
+        <h1 style ="font-size:32px !important">Learn Bootstrap</h1>
+           <br/>
           This is an intro video to the bootstrap templating framework ,It aims to give viewers insight into the framework, 
           and a working understanding of it's syntax and it's most common commands. Practical Exampes are included.
         </div> 
 
-        <div  class=" py-2 col-lg-2 wow  d-flex justify-content-center align-items-center pl-5">
+        <div  class=" py-2 col-lg-2 wow  d-flex flex-column justify-content-around align-items-center pl-5">
         <a href="https://www.youtube.com/watch?v=-qfEOE4vtxE"> <button type="button" class="btn btn-info dark "> 
           Watch <i class="mdi mdi-arrow-right"></i>
+          <a href="https://www.youtube.com/watch?v=rfscVS0vtbw">  <button type="button" class="btn btn-info dark">Book Dev <i class="mdi mdi-calendar"></i></button></a>
         </button>
         </a>
+
+        <div  class="  d-flex justify-content-around align-items-center ">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        </div> 
+
         </div> 
 
      
@@ -149,15 +186,27 @@
           </div>
         </div>
 
-         <div  class=" py-6 col-lg-4 wow ">
+         <div  class=" py-6 mx-5 col-lg-4 wow ">
+         <h1 style ="font-size:32px !important">Basic Python</h1>
+           <br/>
           Here we take a look at our first programming language, Python . 
           We get introduced to a few programming concepts in python ,such as loops ,conditionals etc. 
           Finally , we go through a step by step tutorial on how to install python in your computer.
         </div> 
 
-        <div  class=" py-2 col-lg-2 wow d-flex justify-content-center align-items-center pl-5">
+        <div  class=" py-2 col-lg-2 wow d-flex flex-column justify-content-around align-items-center pl-5">
         <a href="https://www.youtube.com/watch?v=rfscVS0vtbw">  <button type="button" class="btn btn-info dark">Watch <i class="mdi mdi-arrow-right"></i></button></a>
+        <a href="https://www.youtube.com/watch?v=rfscVS0vtbw">  <button type="button" class="btn btn-info dark">Book Dev <i class="mdi mdi-calendar"></i></button></a>
+       
+         <div  class="   d-flex justify-content-around align-items-center ">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
         </div> 
+
+      </div> 
 
       </div>
 

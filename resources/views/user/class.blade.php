@@ -58,13 +58,15 @@
         @include('user.class_content')
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
-          @include('user.footer')
+            <!-- footer was here -->
           <!-- partial -->
         </div>
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
+    
     </div>
+    <!-- @include('user.footer') I COMMENTED OUT THE FOOTER FOR NOW CUZ IT IS IN THE MIDDLE OF THE PAGE FOR SOME REASON -->
     <!-- container-scroller -->
     <!-- plugins:js -->
     @include('user.script')

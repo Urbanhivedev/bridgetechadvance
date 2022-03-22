@@ -50,6 +50,10 @@
 /*-------------------------------------------------------------------*/
 /* === SCSS Compass Functions === */
 
+/*-------------------------------------------------------------------*/
+/* === IMPORTING LATO FONT FOR MR DEAN === */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
 @-webkit-keyframes flash {
   0% {
     opacity: 1; }
@@ -1773,8 +1777,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji","Lato";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace ,"Lato"; }
 
 *,
 *::before,
@@ -1793,7 +1797,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:"Lato"; /*-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1894,7 +1898,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: /*SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace*/"Lato";
   font-size: 1em; }
 
 pre {
@@ -2192,7 +2196,7 @@ pre {
 .container-lg,
 .container-xl {
   width: 100%;
-  padding-right: 20px;
+ padding-right: 20px;
   padding-left: 20px;
   margin-right: auto;
   margin-left: auto; }
@@ -5332,11 +5336,16 @@ input[type="button"].btn-block {
 
 .navbar {
   position: relative;
- 
+  /*YOURE NOT SUPPOSED TO ALTER BOOTSTRAP BUT IF NEED BE DELETE THE CODE BELOW*/
+  float:right !important;
+  max-width:calc(100vw - 150px) ; /* this reduces the width from the right */
+
+  /*YOURE ALTERING BOOTSTRAP HERE ,DELETE THE CODE ABOVE IF NEEDED*/
+  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width:calc(100vw - 150px);
+ 
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-align: center;
@@ -8369,7 +8378,7 @@ button.bg-dark:focus {
   position: fixed;
   top: 0;
   right: 0;
-  left: 0;
+  left: 250px !important;
   z-index: 1030; }
 
 .fixed-bottom {
@@ -10379,14 +10388,14 @@ input:focus {
 /* Typography */
 body {
   font-size: 1rem;
-  font-family: "ubuntu-regular", sans-serif;
+  font-family:"Lato" /*"ubuntu-regular"*/, sans-serif;
   font-weight: initial;
   line-height: normal;
   -webkit-font-smoothing: antialiased; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "ubuntu-medium", sans-serif; }
+  font-family:/* "ubuntu-medium"*/"Lato", sans-serif; }
 
 p {
   font-size: 0.875rem; }
@@ -10527,7 +10536,7 @@ pre {
 code {
   padding: 5px;
   color: #fe7c96;
-  font-family: "ubuntu-light", sans-serif;
+  font-family: "Lato"/*"ubuntu-light"*/, sans-serif;
   font-size: 0.875rem;
   border-radius: 4px; }
 
@@ -10563,7 +10572,7 @@ code {
   -webkit-transition: all 0.25s ease;
   -ms-transition: all 0.25s ease;
   font-size: calc(0.875rem - 0.05rem);
-  font-family: "ubuntu-regular", sans-serif; }
+  font-family: "Lato"/*"ubuntu-regular"*/, sans-serif; }
   .footer a {
     color: #1bcfb4;
     font-size: inherit; }
@@ -10662,14 +10671,24 @@ code {
   flex-grow: 1; }
 
 .font-weight-light {
-  font-family: "ubuntu-light", sans-serif; }
+  font-family: /*"ubuntu-light"*/"Lato", sans-serif;
+  /*i put this here myself*/
+ font-weight: 100;
+}
 
 .font-weight-bold {
-  font-family: "ubuntu-bold", sans-serif; }
+  font-family: /*"ubuntu-bold"*/"Lato", sans-serif;
+  /*i put this here myself*/
+ font-weight: 700;
+
+}
 
 .font-weight-normal {
-  font-family: "ubuntu-regular", sans-serif; }
-
+  font-family: /*"ubuntu-regular"*/"Lato", sans-serif;
+ /*i put this here myself*/
+ font-weight: 400;
+}
+ 
 .image-grouped {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11254,7 +11273,7 @@ code {
 .btn {
   font-size: 0.875rem;
   line-height: 1;
-  font-family: "ubuntu-bold", sans-serif;
+  font-family: "Lato" /*"ubuntu-bold"*/, sans-serif;
   /* Buttons with only icons */
   /* Buttons with icon and text */ }
   .btn i {
@@ -12180,16 +12199,16 @@ code {
     color: #343a40;
     margin-bottom: 0.75rem;
     text-transform: capitalize;
-    font-family: "ubuntu-medium", sans-serif;
+    font-family: "Lato" /*"ubuntu-medium"*/, sans-serif;
     font-size: 1.125rem; }
   .card .card-subtitle {
-    font-family: "ubuntu-regular", sans-serif;
+    font-family: "Lato" /*"ubuntu-regular"*/, sans-serif;
     margin-top: 0.625rem;
     margin-bottom: 0.625rem; }
   .card .card-description {
     color: #76838f;
     margin-bottom: 1.5rem;
-    font-family: "ubuntu-regular", sans-serif; }
+    font-family:"Lato" /*"ubuntu-regular"*/, sans-serif; }
   .card.card-outline-success {
     border: 1px solid #1bcfb4; }
   .card.card-outline-primary {
@@ -12518,7 +12537,7 @@ code {
 
 .form-control {
   border: 1px solid #ebedf2;
-  font-family: "ubuntu-regular", sans-serif;
+  font-family: "Lato" /*"ubuntu-regular"*/, sans-serif;
   font-size: 0.8125rem; }
   .form-control:focus {
     background-color: #ffffff;
@@ -12595,7 +12614,7 @@ select.form-control {
     -ms-flex-align: center;
     align-items: center;
     padding: 15px 15px;
-    font-family: "ubuntu-regular", sans-serif;
+    font-family:"Lato" /*"ubuntu-regular"*/, sans-serif;
     font-size: 0.875rem; }
     .icons-list > div i {
       display: inline-block;
@@ -12833,7 +12852,7 @@ dl {
   .table thead th {
     border-top: 0;
     border-bottom-width: 1px;
-    font-family: "ubuntu-medium", sans-serif;
+    font-family:"Lato" /*"ubuntu-medium"*/, sans-serif;
     font-weight: initial; }
     .table thead th i {
       margin-left: 0.325rem; }
@@ -12941,14 +12960,15 @@ dl {
 
 /* Navbar */
 .navbar {
-  font-family: "ubuntu-light", sans-serif;
+  font-family: "Lato" /*"ubuntu-light"*/, sans-serif;
   background: /*black*/ #fff;
   transition: background 0.25s ease;
   -webkit-transition: background 0.25s ease;
   -moz-transition: background 0.25s ease;
   -ms-transition: background 0.25s ease; }
   .navbar .navbar-brand {
-    width: 110px; }
+    width: 110px ; 
+  }
   .navbar .navbar-brand-wrapper {
     transition: width 0.25s ease, background 0.25s ease;
     -webkit-transition: width 0.25s ease, background 0.25s ease;
@@ -13020,19 +13040,19 @@ dl {
       .navbar .navbar-menu-wrapper .search-field .input-group input:-ms-input-placeholder {
         font-size: 0.875rem;
         color: #9c9fa6;
-        font-family: "ubuntu-light", sans-serif; }
+        font-family:"Lato" /*"ubuntu-light"*/, sans-serif; }
       .navbar .navbar-menu-wrapper .search-field .input-group input:-moz-placeholder {
         font-size: 0.875rem;
         color: #9c9fa6;
-        font-family: "ubuntu-light", sans-serif; }
+        font-family: "Lato"/*"ubuntu-light"*/, sans-serif; }
       .navbar .navbar-menu-wrapper .search-field .input-group input::-moz-placeholder {
         font-size: 0.875rem;
         color: #9c9fa6;
-        font-family: "ubuntu-light", sans-serif; }
+        font-family:Lato /*"ubuntu-light"*/, sans-serif; }
       .navbar .navbar-menu-wrapper .search-field .input-group input::-webkit-input-placeholder {
         font-size: 0.875rem;
         color: #9c9fa6;
-        font-family: "ubuntu-light", sans-serif; }
+        font-family:"Lato" /*"ubuntu-light"*/, sans-serif; }
     .navbar .navbar-menu-wrapper .search-field .input-group i {
       font-size: 17px;
       margin-right: 0;
@@ -13319,9 +13339,9 @@ dl {
 
 /* Sidebar */
 .sidebar {
-  min-height: calc(100vh); /* - 70px*/
+  min-height: calc(100vh -70px ); /* - 70px*/
   background: black/*#ffffff*/;
-  font-family: "ubuntu-regular", sans-serif;
+  font-family:"Lato" /*"ubuntu-regular"*/, sans-serif;
   
   padding: 0;
   width: 260px;
@@ -13408,7 +13428,7 @@ dl {
         background: #ffffff; }
         .sidebar .nav .nav-item.active > .nav-link .menu-title {
           color: #b66dff;
-          font-family: "ubuntu-medium", sans-serif; }
+          font-family:"Lato" /*"ubuntu-medium"*/, sans-serif; }
         .sidebar .nav .nav-item.active > .nav-link i {
           color: #b66dff; }
       .sidebar .nav .nav-item:hover {
@@ -13488,7 +13508,7 @@ dl {
 @media screen and (max-width: 991px) {
   .sidebar-offcanvas {
     position: fixed;
-    max-height: calc(100vh - 70px);
+    max-height: calc(100vh ); 
     top: 70px;
     bottom: 0;
     overflow: auto;
@@ -13500,7 +13520,7 @@ dl {
 
 /* Layouts */
 .navbar.fixed-top + .page-body-wrapper {
-  padding-top: 70px; }
+  padding-top:45px;  /*70px;*/ }
 
 @media (min-width: 992px) {
   .sidebar-icon-only .navbar .navbar-brand-wrapper {
@@ -13624,7 +13644,7 @@ dl {
     outline: 1px solid slategrey; }
 
 .page-body-wrapper {
-  min-height: calc(100vh - 70px);
+ min-height: calc(100vh - 70px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13633,10 +13653,14 @@ dl {
   -ms-flex-direction: row;
   flex-direction: row;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0; 
+
+ 
+
+}
   .page-body-wrapper.full-page-wrapper {
     width: 100%;
-    min-height: 100vh; }
+  *min-height: 100vh; }
 
 .main-panel {
   -webkit-transition: width 0.25s ease, margin 0.25s ease;
@@ -13656,11 +13680,13 @@ dl {
       width: 100%; } }
 
 .content-wrapper {
-  background: #f2edf3;
+  /*background: #f2edf3;*/
+  /*background: #f5fbf6;*/
   padding: 2.75rem 2.25rem;
   width: 100%;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
+ 
   flex-grow: 1; }
 
 /*# sourceMappingURL=style.css.map */

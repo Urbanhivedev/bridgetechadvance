@@ -1,4 +1,4 @@
-
+ 
 <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
@@ -9,8 +9,8 @@
                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>  <!-- alert alert-success -->
      @endif
-         
-                <span class="page-title-icon bg-gradient-primary text-white mr-2">
+         <!-- THE STUFF BELOW IS NOT NEEDED CUZ IT DOES NOT CORRESPOND WITH THE FIGMA, HENCE WHY IT IS COMMENTED OUT
+                <span class="page-title-icon bg-gradient-primary text-white mr-2 mt-6">
                   <i class="mdi mdi-calendar"></i>
                 </span> Book A Class
               </h3>
@@ -20,15 +20,15 @@
                     <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
                   </li>
                 </ul>
-              </nav>
+              </nav> -->
             </div>
 
             
-            <div class="widgetDivider">
-            <div class = "listContainer mt-0 p-0"> <!--list container starting -->
+        <!--    <div class="widgetDivider " > the things in the div below ,make them into one column for small screens with developer pics on top -->
+            <div  style="margin-top:5%; " class = "listContainer  p-0"> <!-- mt-0 list container starting -->
            <div class="widgetSmTitle"> Available Developers</div>
-          <ul class="widgetSmList" id="developerList">
- <!-- 1 -->      <li class="widgetSmListItem">
+          <ul class="widgetSmList" id="developerList" >
+ <!-- 1 -->      <li class="widgetSmListItem" >
             
             <div class="widgetSmUser ml-4">
            
@@ -198,15 +198,19 @@
          </li> <!-- widget Sm List item ending -->
 
 
+
+
+
+         
           </ul>
             
            </div> <!--list container ending -->
   <!-- calendar container ending -->
-           </div>  <!--widget Divider ending -->
+         <!--  </div>  widget Divider ending -->
 
            
 
-    <form class="row g-3" action="{{ url('booking_class')}}"  id="personal" style="display:none" method="POST" enctype="multipart/form-data">
+    <form class="row g-3" action="{{ url('booking_class')}}"  id="personal"  style="display:none" method="POST" enctype="multipart/form-data">  <!-- I PUT DISPLAY NONE CUZ I WANT TO MAKE IT ACTIVE WITH JAVASCRIPT, ONLY AFTER THEY HAVE PICKED THE DEV THEY WANT   -->
         @csrf
   <div class="col-md-6">
     <label for="inputEmail4" class="form-label">FirstName </label>
@@ -272,5 +276,5 @@
   
           
               </div>
-            </div>
+            </div> 
          </div> 

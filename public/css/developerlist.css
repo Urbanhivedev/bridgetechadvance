@@ -1,6 +1,6 @@
 .listContainer {
    /* flex:3;*/
-    min-width: 1200px;
+    min-width: 300px; /*used to be 1200px*/
 
     /*padding:20px;*/
     /*margin:20px;*/
@@ -31,7 +31,7 @@
  margin:0px;
  padding:30px;
  list-style: none;
- min-width: 1000px;
+ min-width: 200px; /*used to be 1000px*/
 }
 
 
@@ -41,7 +41,7 @@
     align-items:center;
     justify-content:space-around;
     margin:20px 0px;
-    
+    min-width:200px; /*just experimenting*/
     border-radius: 20px;
     padding:10px;
    box-shadow:0px 0px 15px -10px rgba(0,0,0,0.8);

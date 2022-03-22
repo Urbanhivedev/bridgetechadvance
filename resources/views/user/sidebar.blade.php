@@ -1,9 +1,14 @@
-      <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_sidebar.html -->
+      <div class="container-fluid page-body-wrapper " style="position:absolute !important; top:-5% !important;left:-2% !important; ">
+        <!-- partial:partials/_sidebar.html --> <!-- come check if you absolutely need this position absolute ,or you cna get the sidebar to hit the top another way -->
         <nav  class="sidebar sidebar-offcanvas" id="sidebar" style="background:black !important;color:white !important;">
           <ul class="nav">
 
-
+          <li class="nav-item " style="background:black !important;color:white !important;" > 
+          <div  class=" text-center navbar-brand-wrapper d-flex align-items-center justify-content-center;" style=" background:black !important;width:259px;">
+          <a class="navbar-brand brand-logo" href="index-2.html"><img src="admin/assets/images/urbanhive.png"   style="width:80px;height:65px;padding-top:8px;" alt="logo" /></a>
+          <!-- <a class="navbar-brand brand-logo-mini" href="index-2.html"><img src="admin/assets/images/urbanhive.png"  style="width:60px;height:60px;" alt="logo" /></a> -->
+        </div>
+          </li> 
 
             <li class="nav-item nav-profile">
               <a href="#" class="nav-link">
@@ -55,7 +60,7 @@
 
             <li class="nav-item" style="background:black !important;color:white !important;">
               <a class="nav-link" href="{{ url('user_student')}}">
-                <span class="menu-title" style="color:white !important;font-size:24px;">Match</span>>
+                <span class="menu-title" style="color:white !important;font-size:24px;">Match</span>
                 
               </a>
             </li>

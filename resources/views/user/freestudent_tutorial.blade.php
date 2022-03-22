@@ -11,6 +11,10 @@
     <!-- dagogo's styles-->
 <link rel="stylesheet" href="css/videolist.css">
 
+   <!-- font awesome for the styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
     <!-- plugins:css -->
     <link rel="stylesheet" href="admin/assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="admin/assets/vendors/css/vendor.bundle.base.css">
@@ -39,17 +43,17 @@
   </head>
 
   <body>
-    <div class="container-scroller">
+    <div class="container-scroller" > <!-- style="position:relative !important " -->
                   
             <div class="d-flex align-items-center justify-content-between">
               <a href="https://www.bootstrapdash.com/product/purple-bootstrap-admin-template/"><i class="mdi mdi-home mr-3 text-white"></i></a>
               <button id="bannerClose" class="btn border-0 p-0">
                 <i class="mdi mdi-close text-white mr-0"></i>
               </button>
-            </div>
-          </div>
-        </div>
-      </div>
+            </div> 
+         </div>
+        </div> 
+      </div> 
       <!-- partial:partials/_navbar.html -->
       @include('user.navbar')
       <!-- partial -->
