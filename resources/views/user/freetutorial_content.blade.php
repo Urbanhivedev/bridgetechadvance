@@ -13,6 +13,7 @@
  </style>
 
 
+
 <div class="main-panel">
           <div class="content-wrapper" style="background: #F4f9f9 !important;" >  <!--THE BACKGROUND COLOR YOU CHOSE IS VERY CLOSE ,BUT NOT EXACT ,TREAT IT LATER -->
             <div class="page-header">
@@ -45,7 +46,7 @@
               <div class="post-category">
                 <a href=""></a>
               </div>
-              <a href="https://www.youtube.com/watch?v=EGQh5SZctaE" class="post-thumb">
+              <a href="https://youtu.be/akid1fziH_8" class="post-thumb">
                 <img src="../free/assets/img/prog.jpg" alt="video thumbnail">
               </a>
             </div>
@@ -76,9 +77,9 @@
 
         <div  class=" py-2 col-lg-2 wow  d-flex flex-column justify-content-around align-items-center pl-5">
          
-        <a href="https://www.youtube.com/watch?v=EGQh5SZctaE" class="post-thumb">
+        <a href="https://youtu.be/akid1fziH_8" class="post-thumb">
         <button type="button" class="btn btn-info dark">Watch <i class="mdi mdi-arrow-right"></i></button>
-        <a href="https://www.youtube.com/watch?v=rfscVS0vtbw">  <button type="button" class="btn btn-info dark">Book Dev <i class="mdi mdi-calendar"></i></button></a>
+        <a href="{{ url('student_class')}}">  <button type="button" class="btn btn-info dark">Book Dev <i class="mdi mdi-calendar"></i></button></a>
         </a>
         <div  class="  d-flex justify-content-around align-items-center ">
         <span class="fa fa-star checked"></span>
@@ -111,16 +112,16 @@
               <div class="post-category">
                 <a href="#"></a>
               </div>
-              <a href="https://www.youtube.com/watch?v=-qfEOE4vtxE" class="post-thumb">
-                    <img src="../free/assets/img/bootstrap-thumb.jpeg" alt="bootstrap">
+              <a href="https://youtu.be/akid1fziH_8" class="post-thumb">
+                    <img src="../free/assets/img/vscodethumb.webp" alt="bootstrap">
               </a>
             </div>
             <div class="body">
-              <h5 class="post-title"><a href="https://www.youtube.com/watch?v=-qfEOE4vtxE">Learn Bootstrap and supercharge your page Desgin Skills</a></h5>
+              <h5 class="post-title"><a href="https://youtu.be/akid1fziH_8">Get Started With Your First Text Editor</a></h5>
               <div class="site-info">
                 <div class="avatar mr-2">
                   <div class="avatar-img">
-                  <img src="../free/assets/img/bootstrap-thumb.jpeg" alt="profile image">
+                  <img src="../free/assets/img/vscodethumb.webp" alt="profile image">
                   </div>
                   <span>Dagogo Uranta</span>
                 </div>
@@ -130,16 +131,17 @@
         </div>
 
         <div  class=" py-6  mx-5 col-lg-4 wow ">
-        <h1 style ="font-size:32px !important">Learn Bootstrap</h1>
+        <h1 style ="font-size:32px !important">Visual Studio Code</h1>
            <br/>
-          This is an intro video to the bootstrap templating framework ,It aims to give viewers insight into the framework, 
-          and a working understanding of it's syntax and it's most common commands. Practical Exampes are included.
+          This is a walkthrough , on installing and setting up visual studio code. 
+          VS code was created by microsoft, and is one of the most popular code editors in the world, because of it's multitude of features and simplicity to use.
+          At the end of this tutorial,you will have downloaded and set up visual studio code. You will also be familiar with a basic navigation of VS code.
         </div> 
 
         <div  class=" py-2 col-lg-2 wow  d-flex flex-column justify-content-around align-items-center pl-5">
-        <a href="https://www.youtube.com/watch?v=-qfEOE4vtxE"> <button type="button" class="btn btn-info dark "> 
+        <a href="https://youtu.be/akid1fziH_8"> <button type="button" class="btn btn-info dark "> 
           Watch <i class="mdi mdi-arrow-right"></i>
-          <a href="https://www.youtube.com/watch?v=rfscVS0vtbw">  <button type="button" class="btn btn-info dark">Book Dev <i class="mdi mdi-calendar"></i></button></a>
+          <a href="{{ url('student_class')}}">  <button type="button" class="btn btn-info dark">Book Dev <i class="mdi mdi-calendar"></i></button></a>
         </button>
         </a>
 
@@ -168,16 +170,16 @@
               <div class="post-category">
                 <a href="#"></a>
               </div>
-              <a href="https://www.youtube.com/watch?v=rfscVS0vtbw" class="post-thumb">
-                <img src="../free/assets/img/Python-Syntax-Thumbnail.jpg" alt="">
+              <a href="https://youtu.be/akid1fziH_8" class="post-thumb">
+                <img src="../free/assets/img/introtohtml.jpg" alt="html thmbnail">
               </a>
             </div>
           <div class="body">
-              <h5 class="post-title"><a href="https://www.youtube.com/watch?v=rfscVS0vtbw">A short Intro to python programming</a></h5>
+              <h5 class="post-title"><a href="https://youtu.be/akid1fziH_8">A short Intro to python programming</a></h5>
               <div class="site-info">
                 <div class="avatar mr-2">
                   <div class="avatar-img">
-                  <img src="../free/assets/img/Python-Syntax-Thumbnail.jpg" alt="python tutorial">
+                  <img src="../free/assets/img/introtohtml.jpg" alt="python tutorial">
                   </div>
                   <span>Ola Kabir</span>
                 </div>
@@ -187,16 +189,15 @@
         </div>
 
          <div  class=" py-6 mx-5 col-lg-4 wow ">
-         <h1 style ="font-size:32px !important">Basic Python</h1>
+         <h1 style ="font-size:32px !important">Basic HTML & CSS </h1>
            <br/>
-          Here we take a look at our first programming language, Python . 
-          We get introduced to a few programming concepts in python ,such as loops ,conditionals etc. 
-          Finally , we go through a step by step tutorial on how to install python in your computer.
+          In this video , you will follow one of our developers to create a basic page with html and css. This is to give you a taste of development of web pages and how they interact.
+          You will create html , css and Javascript files in this video and implement some basic functionality.
         </div> 
 
         <div  class=" py-2 col-lg-2 wow d-flex flex-column justify-content-around align-items-center pl-5">
-        <a href="https://www.youtube.com/watch?v=rfscVS0vtbw">  <button type="button" class="btn btn-info dark">Watch <i class="mdi mdi-arrow-right"></i></button></a>
-        <a href="https://www.youtube.com/watch?v=rfscVS0vtbw">  <button type="button" class="btn btn-info dark">Book Dev <i class="mdi mdi-calendar"></i></button></a>
+        <a href="https://youtu.be/akid1fziH_8">  <button type="button" class="btn btn-info dark">Watch <i class="mdi mdi-arrow-right"></i></button></a>
+        <a href="{{ url('student_class')}}">  <button type="button" class="btn btn-info dark">Book Dev <i class="mdi mdi-calendar"></i></button></a>
        
          <div  class="   d-flex justify-content-around align-items-center ">
         <span class="fa fa-star checked"></span>

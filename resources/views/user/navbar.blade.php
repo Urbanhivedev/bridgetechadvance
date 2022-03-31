@@ -19,12 +19,16 @@
 
 
           
-            <form class="d-flex align-items-center h-100" action="#">
-              <div class="input-group">
+            <form class="d-flex align-items-center h-100" action="#" >
+              <div class="input-group" >
                 
-                <input type="text" class="form-control bg-transparent border-1" class="input-box" placeholder="Search projects">
+                <input type="text" class="form-control bg-transparent border-1" class="input-box" placeholder="Search projects" >
                  <style>
-                   input[type="text"], textarea { background-color: rgba(235, 202, 52) !important; }
+                   input[type="text"], textarea { 
+                     background-color: rgba(235, 202, 52, 0.2) !important;
+                     
+                    
+                    }
                  </style>
 
                 <div class="input-group-prepend bg-transparent"> 
