@@ -1,2 +1,2 @@
 
-<img src="{{asset('/image/urbanhive.png') }}" > 
+<img src="{{asset('/image/bridgetechlogo.png') }}" > 

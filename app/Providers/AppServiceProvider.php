@@ -23,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+       //condition added by Dagogo for safety , delete the condition below if youre having problems
+       \Illuminate\Support\Facades\URL::forceScheme('https');
     }
 }

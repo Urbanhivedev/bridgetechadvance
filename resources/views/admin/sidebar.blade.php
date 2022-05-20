@@ -5,7 +5,7 @@
             <li class="nav-item nav-profile">
               <a href="#" class="nav-link">
                 <div class="nav-profile-image">
-                  <img src="admin/assets/images/urbanhive.PNG"alt="profile">
+                  <img src="admin/assets/images/bridgetechlogo.png"alt="profile">
                   <span class="login-status online"></span>
                   <!--change to offline or busy as needed-->
                 </div>

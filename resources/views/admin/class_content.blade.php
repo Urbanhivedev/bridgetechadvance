@@ -3,10 +3,14 @@
             <div class="page-header">
               <h3 class="page-title">
               @if(session('success'))
+             
+             <div class="d-flex align-items-center justify-content-center">
               <div class="alert alert-success alert-dismissible fade show" role="alert">
                    <strong>{{session('success')}}</strong> 
                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
+            </div>
+
+            </div>
      @endif
                 <span class="page-title-icon bg-gradient-primary text-white mr-2">
                   <i class="mdi mdi-home"></i>

@@ -57,3 +57,6 @@ Route::post('/bookstudent_class', [UserController::class, 'bookclass']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+/*URL::forceScheme('https');*/

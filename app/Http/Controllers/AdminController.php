@@ -55,7 +55,7 @@ class AdminController extends Controller
 
     ]);
 
-    return redirect()->back()->with('success', 'Congratulation developer created successfully');
+    return redirect()->back()->with('success', 'Congratulations , developer created successfully ! ');
 
 
 
@@ -95,7 +95,7 @@ class AdminController extends Controller
 
          
 
-        return redirect()->back()->with('success', 'Congratulation you hav successfully book a class');
+        return redirect()->back()->with('success', 'Congratulations! You have successfully booked a class.');
 
     }
 

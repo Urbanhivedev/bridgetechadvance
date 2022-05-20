@@ -29,7 +29,9 @@ SET time_zone = "+00:00";
 
 /*use heroku_1c080eed5e1812a;*/
  
- use heroku_4636c03449d9cc9;
+/*use heroku_659481b517225a1;*/
+ 
+use heroku_a04c9df5278329f;
  
  DROP TABLE IF EXISTS `appoints`;
 
@@ -243,10 +245,20 @@ CREATE TABLE `times` (
 -- Dumping data for table `times`
 --
 
-INSERT INTO `times` (`id`, `time`, `created_at`, `updated_at`) VALUES
+/*INSERT INTO `times` (`id`, `time`, `created_at`, `updated_at`) VALUES
 (2, '10:00 - 12:00', NULL, NULL),
 (3, '12:00 - 2:00', NULL, NULL),
-(4, '2:00 - 4:00', NULL, NULL);
+(4, '2:00 - 4:00', NULL, NULL); */
+
+
+INSERT INTO `times` (`id`, `time`, `created_at`, `updated_at`) VALUES
+(2, '10:00', NULL, NULL),
+(3, '11:00', NULL, NULL),
+(4, '12:00', NULL, NULL),
+(5, '1:00', NULL, NULL),
+(6, '2:00', NULL, NULL),
+(7, '3:00', NULL, NULL);
+
 
 -- --------------------------------------------------------
 
@@ -258,7 +270,9 @@ DROP TABLE IF EXISTS `users`;
 
 CREATE TABLE `users` (
   `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `first_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `last_name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `phone_number` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `user_type` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   `email_verified_at` timestamp NULL DEFAULT NULL,
@@ -276,13 +290,13 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `user_type`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
-(1, 'ola dipo', 'admin@gmail.com', '1', NULL, '$2y$10$9aGUaD5Mvl87iu31xxShoOAPc3Njymjmsf6J/CI1v5UTuKJ6TEqqW', NULL, NULL, NULL, NULL, NULL, '2022-02-17 22:34:11', '2022-02-17 22:34:11'),
-(2, 'faith', 'faith@gmail.com', '0', NULL, '$2y$10$o23BXCDS9kURsQruWBN4eenGJ2udvCHuA.43tLmJESQK4S6xEZME6', NULL, NULL, NULL, NULL, NULL, '2022-02-17 22:55:55', '2022-02-17 22:55:55'),
-(3, 'dagogo', 'dagogo@gmail.com', '0', NULL, '$2y$10$CmYR7ePs0Hp91kQ8x3C3SOZRAMLxgqcTD3ARPnFozP1GYkrfAN/N6', NULL, NULL, NULL, NULL, NULL, '2022-02-18 01:15:32', '2022-02-18 01:15:32'),
-(4, 'folake', 'follyola@gmail.com', '0', NULL, '$2y$10$8mQ.SfdjU4ZmO8fxn4FPmODPNSurVuY9i4iEyFtPtBds.yxvRzGEW', NULL, NULL, NULL, NULL, NULL, '2022-02-21 18:57:55', '2022-02-21 18:57:55'),
-(5, 'demeji ola', 'demeji@gmail.com', '0', NULL, '$2y$10$6w3wu3Ac4fWjh4eVLQTR6OkxvALUDJhEkOnYMNFzSjnh/dPWsmkJm', NULL, NULL, NULL, NULL, NULL, '2022-02-21 18:59:37', '2022-02-21 18:59:37'),
-(6, 'dagogo Uranta', 'dagogouranta@gmail.com', '0', NULL, '$2y$10$a7ZjANnlGVx3GcDy07Zl3uA91GveIxvf7wfWkIbVwoEEcakRvWL.i', NULL, NULL, NULL, NULL, NULL, '2022-02-21 19:11:19', '2022-02-21 19:11:19');
+INSERT INTO `users` (`id`, `first_name`,`last_name`, `phone_number`, `email`, `user_type`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
+(1, 'ola', 'dipo','08183763331', 'admin@gmail.com', '1', NULL, '$2y$10$9aGUaD5Mvl87iu31xxShoOAPc3Njymjmsf6J/CI1v5UTuKJ6TEqqW', NULL, NULL, NULL, NULL, NULL, '2022-02-17 22:34:11', '2022-02-17 22:34:11'),
+(2, 'faith', 'etuk','08183763331','faith@gmail.com', '0', NULL, '$2y$10$o23BXCDS9kURsQruWBN4eenGJ2udvCHuA.43tLmJESQK4S6xEZME6', NULL, NULL, NULL, NULL, NULL, '2022-02-17 22:55:55', '2022-02-17 22:55:55'),
+(3, 'dagogo','uranta','08183763331', 'dagogo@gmail.com', '0', NULL, '$2y$10$CmYR7ePs0Hp91kQ8x3C3SOZRAMLxgqcTD3ARPnFozP1GYkrfAN/N6', NULL, NULL, NULL, NULL, NULL, '2022-02-18 01:15:32', '2022-02-18 01:15:32'),
+(4, 'folake','dipupo','08183763331', 'follyola@gmail.com', '0', NULL, '$2y$10$8mQ.SfdjU4ZmO8fxn4FPmODPNSurVuY9i4iEyFtPtBds.yxvRzGEW', NULL, NULL, NULL, NULL, NULL, '2022-02-21 18:57:55', '2022-02-21 18:57:55'),
+(5, 'demeji','kola','08183763331', 'demeji@gmail.com', '0', NULL, '$2y$10$6w3wu3Ac4fWjh4eVLQTR6OkxvALUDJhEkOnYMNFzSjnh/dPWsmkJm', NULL, NULL, NULL, NULL, NULL, '2022-02-21 18:59:37', '2022-02-21 18:59:37'),
+(6, 'dagogo','dipo','08183763331', 'dagogouranta@gmail.com', '0', NULL, '$2y$10$a7ZjANnlGVx3GcDy07Zl3uA91GveIxvf7wfWkIbVwoEEcakRvWL.i', NULL, NULL, NULL, NULL, NULL, '2022-02-21 19:11:19', '2022-02-21 19:11:19');
 
 --
 -- Indexes for dumped tables
