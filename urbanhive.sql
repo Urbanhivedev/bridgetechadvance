@@ -31,7 +31,9 @@ SET time_zone = "+00:00";
  
 /*use heroku_659481b517225a1;*/
  
-use heroku_a04c9df5278329f;
+/*use heroku_a04c9df5278329f;*/
+
+use heroku_4636c03449d9cc9;
  
  DROP TABLE IF EXISTS `appoints`;
 
