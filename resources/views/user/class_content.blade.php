@@ -299,7 +299,7 @@
   
   <div class="col-6">
     <label for="inputAddress" class="form-label">Email</label>
-    <input type="text" name="email" class="form-control"   required id="inputAddress" placeholder="Email">
+    <input type="text" name="email" class="form-control"   required id="inputAddress" placeholder="Email" id="bookersEmail">
   </div>
 
   <div class="col-6">
@@ -386,7 +386,7 @@
  let mailButton =  document.querySelector('#send-mails');
  mailButton.addEventListener("click", sendtoClients);
  const bookersEmail = document.getElementById("inputAddress");
- const firstName = document.getElementsByName('firstname');
+ const firstName = document.getElementById('inputEmail4');
 
 
   function sendtoClients() {
@@ -401,24 +401,9 @@
     },
     body: JSON.stringify({
         subject: "New message from Urban Hive bridge tech advance",
-        message: `A booking by ${firstName.value} for ${devOptions.value} on  ${chosenDay.value} at ${chosenTime.value} has been made, please send a confirmatory email to the booker , and alert the developer`
+        message: `A booking by ${firstName.value} for ${devOptions.value} on  ${chosenDay.value} at ${chosenTime.value} has been made, please send a confirmatory email to their email ,${bookersEmail.value} , and alert the developer`
     })
 })
-    .then(() => (
-
-      fetch("https://formsubmit.co/ajax/dagogouranta@gmail.com", {
-    method: "POST",
-    headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-    },
-    body: JSON.stringify({
-        subject: "From Bridge Tech Advance",
-        message: "A new booking has been made , please see the database"
-    })
-})
-  )
-    )
     .then(() => (deetsForm.submit()) )
     .catch(error => console.log(error));
 
