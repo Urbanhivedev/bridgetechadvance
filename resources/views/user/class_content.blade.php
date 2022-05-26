@@ -192,7 +192,7 @@
           <div class="widgetSmUser ml-4">
            
            <img src="/image/Jonathan-Headshot.jpg" alt="profile pic" class="devAvatar" />
-            <span class="widgetSmUsername"> Abu Bakir </span> 
+            <span class="widgetSmUsername"> Fuhad Aminu </span> 
             <span class="widgetSmUserTitle"> Flutter developer, Dart ,Kotlin </span>
           
            </div>
@@ -318,12 +318,12 @@
  </div> 
  
  <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
-  <label for="inputAddress2" class="form-label">Develolpers</label>
+  <label for="inputAddress2" class="form-label">Developers</label>
             <select name="developer" id="dev-name" class="custom-select" required>
               <option value="">Developers</option>
               <option value="Backend Developer"  >Olanrewaju Kabir Backend Developer</option>
               <option value="Frontend Developer"  >Dagogo Uranta Frontend Develper</option>
-              <option value="Mobile App Developer"  >Abu Bakir Mobile App Developer</option>
+              <option value="Mobile App Developer"  >Fuhad Aminu Mobile App Developer</option>
             </select>
  </div>
           
@@ -345,10 +345,9 @@
 
   <div class="col-12">
        <!-- <a href="https://paystack.com/pay/urbanhive-session-payment" >  <button  style="background-color:black" type="button" class="btn btn-primary">Proceed to Payment</button> </a> -->
-    <button  style="background-color:black" type="submit" class="btn btn-primary">Book Now</button>  <!-- this is to add to the database ,figure out how to combine them 
+    <button  style="background-color:black" type="button" id="send-mails" class="btn btn-primary">Book Now</button>  <!-- this is to add to the database ,figure out how to combine them -->
   </div>
-</form>   OKAY SO i WANT THIS BUTTON TO REDIRECT TO THE PAYSTACK PAYMENT PAGE AND THEN PASS INFORMATION 
-          BACK TO OUR APP AND IT WILL STORE DATA IN THE DATABASE , BASED ON WHAT WAS PASSED BACK AND THEN IT CAN REDIRECT TO THAT SAME PAGE ! -->
+</form>  
 
 
 
@@ -370,6 +369,7 @@
  let deetsForm =  document.querySelector('#personal');
  let slotParents =  document.querySelectorAll('.clickMonitor'); 
  let  daysParents = document.querySelectorAll('.daysMonitor'); 
+
  
  let devOptions = document.getElementById('dev-name');
  let options = document.getElementById('dev-name').options;
@@ -382,7 +382,52 @@
  let pickedDay = " ";
  let chosenDay =  document.querySelector('.day-select');
 
+// the book now button is to send an email to formsubmit
+ let mailButton =  document.querySelector('#send-mails');
+ mailButton.addEventListener("click", sendtoClients);
+ const bookersEmail = document.getElementById("inputAddress");
 
+
+
+  function sendtoClients() {
+     
+    fetch(`https://formsubmit.co/ajax/${bookersEmail.value}`, {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        subject: "New message from Urban Hive",
+        message: `Your booking for ${chosenDay.value} at ${chosenTime.value} has been made`
+    })
+})
+    .then(
+
+      fetch(`https://formsubmit.co/ajax/admin@urbanhiveng.com`, {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        subject: "From Bridge Tech Advance",
+        message: "A new booking has been made , please see the database"
+    })
+})
+
+
+
+    )
+    .then(deetsForm.submit() )
+    .catch(error => console.log(error));
+
+
+  }
+ 
+ 
+ 
+ 
  function hideDevs() {
   if(pickedDay !== " "){
   devs.style["display"]= "none";
@@ -436,7 +481,7 @@ var month = ("0" + (appointmentDay.getMonth() + 1)).slice(-2);
 
 var appointmentFullDate = appointmentDay.getFullYear()+"-"+(month)+"-"+(day) ;*/
 
-chosenDay.value = pickedDay;
+chosenDay.value === pickedDay;
 
   }
 
