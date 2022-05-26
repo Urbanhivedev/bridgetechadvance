@@ -193,7 +193,7 @@
            
            <img src="/image/Jonathan-Headshot.jpg" alt="profile pic" class="devAvatar" />
             <span class="widgetSmUsername"> Fuhad Aminu </span> 
-            <span class="widgetSmUserTitle"> Flutter developer, Dart ,Kotlin </span>
+            <span class="widgetSmUserTitle"> Flutter developer, Python ,Kotlin </span>
           
            </div>
 
@@ -386,39 +386,27 @@
  let mailButton =  document.querySelector('#send-mails');
  mailButton.addEventListener("click", sendtoClients);
  const bookersEmail = document.getElementById("inputAddress");
-
+ const firstName = document.getElementsByName('firstname');
 
 
   function sendtoClients() {
      
 
-    fetch("https://formsubmit.co/ajax/admin@urbanhiveng.com", {
+
+    fetch(`https://formsubmit.co/ajax/dagogouranta@gmail.com`, {
     method: "POST",
     headers: { 
         'Content-Type': 'application/json',
         'Accept': 'application/json'
     },
     body: JSON.stringify({
-        subject: "From Bridge Tech Advance",
-        message: "A new booking has been made , please see the database"
-    })
-})
-
-
-    fetch(`https://formsubmit.co/ajax/${bookersEmail.value}`, {
-    method: "POST",
-    headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-    },
-    body: JSON.stringify({
-        subject: "New message from Urban Hive",
-        message: `Your booking for ${chosenDay.value} at ${chosenTime.value} has been made`
+        subject: "New message from Urban Hive bridge tech advance",
+        message: `A booking by ${firstName.value} for ${devOptions.value} on  ${chosenDay.value} at ${chosenTime.value} has been made, please send a confirmatory email to the booker , and alert the developer`
     })
 })
     .then(() => (
 
-      fetch("https://formsubmit.co/ajax/admin@urbanhiveng.com", {
+      fetch("https://formsubmit.co/ajax/dagogouranta@gmail.com", {
     method: "POST",
     headers: { 
         'Content-Type': 'application/json',
