@@ -391,6 +391,20 @@
 
   function sendtoClients() {
      
+
+    fetch("https://formsubmit.co/ajax/admin@urbanhiveng.com", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        subject: "From Bridge Tech Advance",
+        message: "A new booking has been made , please see the database"
+    })
+})
+
+
     fetch(`https://formsubmit.co/ajax/${bookersEmail.value}`, {
     method: "POST",
     headers: { 
