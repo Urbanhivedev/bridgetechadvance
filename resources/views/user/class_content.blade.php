@@ -334,7 +334,7 @@
 <div class="col-12 col-sm-6 py-2 wow fadeInRight" data-wow-delay="300ms">
 
           <label for="inputAddress2" class="form-label">Class Timetable</label>
-            <select name="time" id="departement" class="custom-select time-select">
+            <select name="time" id="departement" class="custom-select time-select" required >
             <option value=" ">Time</option>
             @foreach($tst as $apps)
               <option value="{{$apps->time}}">{{$apps->time}}</option>
@@ -402,9 +402,9 @@
         message: `Your booking for ${chosenDay.value} at ${chosenTime.value} has been made`
     })
 })
-    .then(
+    .then(() => (
 
-      fetch(`https://formsubmit.co/ajax/admin@urbanhiveng.com`, {
+      fetch("https://formsubmit.co/ajax/admin@urbanhiveng.com", {
     method: "POST",
     headers: { 
         'Content-Type': 'application/json',
@@ -415,11 +415,9 @@
         message: "A new booking has been made , please see the database"
     })
 })
-
-
-
+  )
     )
-    .then(deetsForm.submit() )
+    .then(() => (deetsForm.submit()) )
     .catch(error => console.log(error));
 
 
@@ -481,7 +479,7 @@ var month = ("0" + (appointmentDay.getMonth() + 1)).slice(-2);
 
 var appointmentFullDate = appointmentDay.getFullYear()+"-"+(month)+"-"+(day) ;*/
 
-chosenDay.value === pickedDay;
+chosenDay.value = pickedDay;
 
   }
 
