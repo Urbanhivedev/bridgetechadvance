@@ -8,7 +8,7 @@ use App\Models\Developers;
 use App\Models\Appoint;
 use App\Models\Time;
 use Illuminate\Support\Facades\Auth;
-use App\Model\User;
+use App\Models\User;
 
 
 class AdminController extends Controller
@@ -75,7 +75,7 @@ class AdminController extends Controller
 
     public function students(){
 
-        $book =  Appoint::latest()->paginate(5);
+        $book =  User::latest()->paginate(5);
 
         return view('admin.student' , compact('book'));
     }

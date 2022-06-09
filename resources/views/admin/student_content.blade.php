@@ -22,12 +22,12 @@
       <th scope="col">FirstName</th>
       <th scope="col">LastName</th>
       <th scope="col">Email</th>
-      <th scope="col">Phone</th>
-      <th scope="col">Course</th>
+     <th scope="col">Phone</th>
+     <!--  <th scope="col">Course</th>
       <th scope="col">Developer</th>
       <th scope="col">Date</th>
       <th scope="col">Time</th>
-      <th scope="col">User</th>
+      <th scope="col">User</th> -->
 
     </tr>
   </thead>
@@ -38,15 +38,15 @@
     @foreach($book as $app)
 
       <th scope="row">{{$p1 ++}}</th>
-     <td>{{$app->firstname}}</td>
-      <td>{{$app->lastname}}</td>
+     <td>{{$app->first_name}}</td>
+      <td>{{$app->last_name}}</td>
       <td>{{$app->email}}</td>
-      <td>{{$app->phone}}</td>
-      <td>{{$app->course}}</td>
+      <td>{{$app->phone_number}}</td>
+    <!--  <td>{{$app->course}}</td>
       <td>{{$app->developer}}</td>
       <td>{{$app->date}}</td>
       <td>{{$app->time}}</td>
-      <td>{{$app->user->name}}</td>
+      <td>{{$app->user->name}}</td> -->
 
 
     </tr>
