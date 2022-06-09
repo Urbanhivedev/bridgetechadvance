@@ -42,12 +42,7 @@
       <td>{{$app->last_name}}</td>
       <td>{{$app->email}}</td>
       <td>{{$app->phone_number}}</td>
-    <!--  <td>{{$app->course}}</td>
-      <td>{{$app->developer}}</td>
-      <td>{{$app->date}}</td>
-      <td>{{$app->time}}</td>
-      <td>{{$app->user->name}}</td> -->
-
+   
 
     </tr>
     @endforeach
